@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Contato</title>
+<head>
+  <meta charset="UTF-8" />
+  <title>Minha Página</title>
 
-    <!-- Facebook Pixel -->
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '2195692537525551');
-      fbq('track', 'PageView');
-    </script>
-    <noscript>
-      <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=2195692537525551&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- Fim do Pixel -->
-    
-    <style>
-      body {
-        background-color: white;
-        text-align: center;
-        font-family: Arial, sans-serif;
-        margin-top: 100px;
-      }
-      .botao {
-        background-color: #007bff;
-        color: white;
-        padding: 20px 40px;
-        font-size: 24px;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-      }
-    </style>
-  </head>
-  <body>
-    <button class="botao"
-      onclick="fbq('track', 'Lead'); window.location.href='https://wa.me/5581991826954';">
-      Clique Aqui
-    </button>
-  </body>
+  <!-- Facebook Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq)return; n=f.fbq=function(){n.callMethod ?
+      n.callMethod.apply(n,arguments) : n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n; n.push=n; n.loaded=!0; n.version='2.0';
+      n.queue=[]; t=b.createElement(e); t.async=!0;
+      t.src=v; s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }(window, document, 'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '2195692537525551'); // Seu ID do Pixel
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2195692537525551&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- Fim do Facebook Pixel -->
+
+  <style>
+    body {
+      text-align: center;
+      margin-top: 100px;
+      font-family: Arial, sans-serif;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 20px 40px;
+      font-size: 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <button
+    onclick="fbq('track', 'Lead'); window.location.href='https://wa.me/5581991826954?text=Olá!%20Tenho%20interesse%20na%20oferta.'">
+    Clique aqui Pra ir pro WhatsApp
+  </button>
+</body>
 </html>
